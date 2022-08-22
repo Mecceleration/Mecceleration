@@ -1,0 +1,5 @@
+@font-face { font-family: Carbon Regular; src: url('static/fonts/Carbon\ Regular/Carbon\ Regular.ttf'); } 
+
+body {
+    font-family: Carbon Regular;
+}
