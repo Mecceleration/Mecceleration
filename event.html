@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="anime.min.js"></script>
+
+    <!-- <link href="//db.onlinewebfonts.com/c/c2f37b51cfdcc16889b758c08cbca40d?family=Carbon+Regular" rel="stylesheet" type="text/css"/>  -->
+    <link href="event.css" rel="stylesheet" type="text/css"/> 
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Carbon Regular', 'sans-serif'],
+                    serif: ['Merriweather', 'serif'],
+                },
+                extend: {
+                    colors: {
+                        cream: '#ffffff',
+                        evening: '#07081f',
+                        magenta: '#6f1227',
+                        orange: '#aa1a24'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="w-screen bg-evening grid grid-rows-1 auto-rows-auto gap-x-8 grid-cols-6 justify-center text-white" >
+        <div class="col-start-2 col-span-4 relative event-title" >
+            <h1 class="py-2 text-6xl">TECHNO CAD</h1>
+        </div>
+        <div class="mt-8 col-start-2 col-span-4">
+            ***Only University Students Are Eligible For This Segment*** <br>
+
+            Participants in Team: 3 <br>
+            Registration Fee (Team) : 1225 BDT <br>
+            Cross Institution Teams are eligible <br> <br>
+
+            <div class="relative w-content" >
+                <div class="absolute w-full bg-orange" >  </div>
+                <a class="relative text-2xl text-orange"> Download Rulebook </a>
+            </div>
+
+            <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-4" >Register</button>
+
+        </div>
+
+        <div class="relative col-start-2 col-span-4 relative mt-24 w-min" >
+            <h1 class="relative pl-4 py-6 text-4xl registration-title w-96">Registration Process</h1>
+        </div>
+        <div class="relative col-start-2 col-span-4 flex flex-col items-center mt-8 mb-96" >
+            
+            <div class='relative pl-8 w-full mt-8'>
+                <div class='flex mb-12'>
+                    <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
+                    <div class='ml-8'>
+                        <p class='text-3xl'>
+                        Submit up the Registration form
+                        </p>
+                        <a class="relative text-lg text-orange"> Form Link </a>
+                    </div>
+                </div>
+            
+                <div class='flex mb-12'>
+                    <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
+                    <div class='ml-8'>
+                        <p class='text-3xl'>
+                            Complete Payment
+                        </p>
+                        <p class="relative text-lg mt-4"> 
+                            payment details: lorem ipsum doler motor
+                        </p>
+                    </div>
+                </div>
+            
+                <div class='flex'>
+                    <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
+                    <div class='ml-8'>
+                        <p class='text-3xl'>
+                        Submit up the Registration form
+                        </p>
+                        <a class="relative text-lg text-orange"> Form Link </a>
+                    </div>
+                </div>
+            
+                \
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+
+    <script>
+        document.querySelectorAll('.event').forEach( el => {
+            console.log(el);
+            el.addEventListener('mouseenter', e => {
+                anime({
+                    targets: [el],
+                    scale: 1.01,
+                    color: "#fff",
+                    backgroundColor: '#6f1227'
+                });
+                console.log("came")
+            })
+            el.addEventListener('mouseleave', e => {
+                anime({
+                    targets: [el],
+                    scale: 1,
+                    color: "#000",
+                    backgroundColor: '#fff'
+                });
+                console.log("came")
+            })
+        } )
+
+    </script>
+</body>

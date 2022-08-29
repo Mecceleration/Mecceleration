@@ -1,0 +1,96 @@
+@font-face { font-family: Carbon Regular; src: url('static/fonts/Carbon\ Regular/Carbon\ Regular.ttf'); } 
+
+body {
+    font-family: Carbon Regular;
+}
+
+.event-title::after {
+    content: '';
+    width: 6em;
+    height: 6px;
+    position: absolute;
+    background-color: #6f1227;
+}
+
+.registration-title::before {
+    content: '';
+    width: 80%;
+    height: 6px;
+    bottom: 0;
+    left: 30%;
+    position: absolute;
+    background-color: #6f1227;
+}
+
+
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #07081f;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.step {
+  display: flex;
+  position: relative;
+}
+
+.step::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    height: 0;
+    width: 2px;
+    background-color: #aa1a24;
+}
+
+
+  /* &:not(:last-child) {
+    &:after {
+      height: 75%;
+    }  
+  } */
+
+
+.number {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #aa1a24;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 14px;
+}
+
+.number .completed {
+    background-color: #aa1a24;
+}
+
+.number  svg {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.number  svg  path {
+    fill: white;
+} */
