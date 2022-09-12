@@ -19,8 +19,11 @@
                     colors: {
                         cream: '#ffffff',
                         evening: '#07081f',
-                        magenta: '#6f1227',
-                        orange: '#aa1a24'
+                        magenta: '#c41b20',
+                        orange: '#c41b20'
+                    },
+                    dropShadow: {
+                        'red-lg': '0 20px 25px rgba(255, 0, 0, 0.45)',
                     }
                 }
             }
@@ -33,89 +36,156 @@
 
     <div class="bg-evening h-screen grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center text-white" >
         <div class="col-start-6 ml-8">
-            <ul class="flex flex-col gap-y-8">
-                <li><a href="event.html?event=accelerate">Accelerate</a></li>
-                <li><a href="event.html?event=deaccelerate">Deccelerate</a></li>
-                <li><a href="event.html?event=pedal to the metal">Pedal to the metal</a></li>
-                <li><a href="event.html?event=engine rumbling">Engine rumbling</a></li>
-                <li><a href="event.html?event=wheels growling">Wheels Growling</a></li>
-                <li><a href="event.html?event=instant 360">instant 360</a></li>
+            <ul class="flex flex-col gap-y-8 navbar_events_container">
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
             </ul>
         </div>
         <div class="row-start-1 col-start-2 col-span-4 text-6xl flex  flex-col gap-y-4">
-            <p class="text-2xl"> Walton Laptop Presents</p>
-            <p class="text-8xl text-orange"> Mecceleration</p>
+            <!-- <p class="text-2xl"> Walton Laptop Presents</p> -->
+            <p class="text-8xl text-orange title"> Mecceleration</p>
             <p class="text-4xl">Innovation and crap</p>
             <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-4" >Contact us</button>
         </div>
     </div>
 
-    <div class="relative ml-80 mr-72 bg-white flex h-64 items-center justify-center gap-x-8" >
-        <div class="col-span-1 h-36 w-96 flex flex-col" >
+
+    <div class="relative px-80 mr-72 w-full text-white bg-evening flex h-64 items-center justify-center gap-x-8" >
+        <div class="event_bar bar_1"></div>
+        <div class="col-span-1 h-36 w-96 flex flex-col flex items-center" >
             <p class="text-5xl">Event Count</p>
-            <p class="text-3xl">10+</p>
+            <p class="text-3xl">11</p>
         </div>
-        <div class="col-span-1 h-36 w-96 flex flex-col" >
+        <div class="event_bar bar_2"></div>
+        <div class="col-span-1 h-36 w-96 flex flex-col flex items-center" >
             <p class="text-5xl">Prize Money</p>
-            <p class="text-3xl">200k</p>
+            <p class="text-3xl">450k+</p>
         </div>
-        <div class="col-span-1 h-36 w-96 flex flex-col" >
-            <p class="text-5xl">Days Left</p>
+        <div class="event_bar bar_3"></div>
+        <div class="col-span-1 h-36 w-96 flex flex-col flex items-center" >
+            <p class="text-5xl">Time Left</p>
             <p class="text-3xl time_remaining">420</p>
         </div>
+        <div class="event_bar bar_4"></div>
     </div>
+
+
 
     <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center bg-evening h-screen text-white" >
         <div class="col-start-2 col-span-2" >
             <p class="text-7xl text-orange">MECCELERATION</p>
             <p class="text-xl mt-8">
-                Building bridges with popsicles to a robot following black and white lines 
-                with infrared sensors, MindSparks’20 had it all. One of the most diverse 
-                multi-departmental competitions in the history of tech and business events 
-                in Bangladesh. With over a thousand participants across the country, 
-                Mindsparks saw the beauty of technology unravel alongside business data charts. 
-                Come along with us, as we have a glimpse of the first international event 
-                organized by AUST Innovation and Design Club.
+                The biggest mechanical engineering Tech-Biz competition in Bangladesh is back with a bang after 2 years! Whether you are an aspiring engineer looking to stack your machines/ robots up against the very best, an aspiring entrepreneur, the local brainiac or the best gamer your friends know- Mecceleration 2022  has a proving ground ready for you! Fight for glory in one of our 11 signature events and aspire to be the best of a thousand participants.
+Red Heaven awaits you. Registrations are open now!
+
+
             </p>
         </div>
         <div class="col-start-4 col-span-2 ml-24">
-            <img src="static/img/demo.jpeg" />
+            <img src="static/img/Mecceleration.png" />
         </div>
     </div>
 
-    <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center h-screen bg-evening text-white">
+    <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center bg-evening text-white">
         <div class="col-start-2 col-span-4 flex flex-col items-center" >
             <h1 class="text-6xl px-8 w-max text-white"> OUR EVENTS </h1>
-            <div class="w-full grid grid-cols-3 mt-28 gap-x-1 gap-y-1 text-black relative" >
-                <a href="event.html" class="event relative col-span-1 h-80 bg-white p-8">
-                    <p class="text-5xl">TRUSSS</p>
-                    <p class="text-xl mt-2">Test out your civil engineering skills by building bridges using nothing else than popsicles and glue. </p>
-                    <img src="static/icons/arrow.svg" class="p-4 w-16 h-16 absolute left-full top-full" 
-                        style="transform: translateX(-100%) translateY(-100%)" />
+            <div class="w-full grid grid-cols-3 mt-28 gap-x-2 gap-y-2 text-white drop-shadow-lg relative" >
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event2 relative col-span-1 h-80 bg-orange p-8">
-                    <p class="text-5xl">TRUSSS</p>
-                    <p class="text-xl mt-2">Test out your civil engineering skills by building bridges using nothing else than popsicles and glue. </p>
-                    <img src="static/icons/arrow.svg" class="p-4 w-16 h-16 absolute left-full top-full" 
-                        style="transform: translateX(-100%) translateY(-100%)" />
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 bg-white p-8">
-                    <p class="text-5xl">TRUSSS</p>
-                    <p class="text-xl mt-2">Test out your civil engineering skills by building bridges using nothing else than popsicles and glue. </p>
-                    <img src="static/icons/arrow.svg" class="p-4 w-16 h-16 absolute left-full top-full" 
-                        style="transform: translateX(-100%) translateY(-100%)" />
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event2 relative col-span-1 h-80 bg-orange p-8">
-                    <p class="text-5xl">TRUSSS</p>
-                    <p class="text-xl mt-2">Test out your civil engineering skills by building bridges using nothing else than popsicles and glue. </p>
-                    <img src="static/icons/arrow.svg" class="p-4 w-16 h-16 absolute left-full top-full" 
-                        style="transform: translateX(-100%) translateY(-100%)" />
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 bg-white p-8">
-                    <p class="text-5xl">TRUSSS</p>
-                    <p class="text-xl mt-2">Test out your civil engineering skills by building bridges using nothing else than popsicles and glue. </p>
-                    <img src="static/icons/arrow.svg" class="p-4 w-16 h-16 absolute left-full top-full" 
-                        style="transform: translateX(-100%) translateY(-100%)" />
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
+                </a>
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
+                </a>
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
+                </a>
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
+                </a>
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
+                </a>
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
+                </a>
+                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-4xl flex items-center justify-between">
+                        <span class="event_title">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                    </p>
+                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
+                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
             </div>
         </div>
@@ -123,19 +193,20 @@
 
     <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center bg-evening h-screen text-white" >
         <div class="col-start-2 col-span-2" >
-            <p class="text-7xl text-orange">ABOUT US</p>
+            <p class="text-4xl text-orange">DEPARTMENT OF MECHANICAL AND PRODUCTION ENGINEERING</p>
             <p class="text-xl mt-8">
-                Mindsparks is the signature event of AUST Innovation and Design Club. Mindspark began its journey with a single goal of unifying the young minds of the country from diverse engineering and business departments under one roof. It is a national event that is organized in association with IIT, Roorkee, India. This is the biggest competition organized in AUST comprising segments from both the Engineering Departments and also the School of Business. After the international collaboration made between AUSTIDC and IIT, Roorkee of India, the winners of some segments get the chance to participate in Cognizance, a signature event of IIT with all expenses born by the organizers. Two versions of this event, in 2019 and 2020 have already been organized with the hope for more in the future.
-            </p>
+                For the 7th time in almost as many years,  the Department of Mechanical and Production Engineering (MPE), IUT is set to host Mecceleration, the biggest Mechanical Engineering technology; innovation; and business festival in Bangladesh.
+The Department of Mechanical and Production Engineering (MPE) is an academic department of the Islamic University of Technology (IUT) established to help develop human resources in the member states of the Organization of Islamic Cooperation(OIC). The Department is also involved in technological and engineering research as well as in organizing seminars, short courses.
+</p>
             <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-8" >Event Details</button>
 
         </div>
         <div class="col-start-4 col-span-2 ml-24">
-            <img src="static/img/demo.jpeg" />
+            <img src="static/img/mech_dept.jpg" />
         </div>
     </div>
 
-    <div class="grid grid-rows-1 gap-x-16 grid-cols-6 items-center justify-center h-screen bg-evening text-white">
+    <!-- <div class="grid grid-rows-1 gap-x-16 grid-cols-6 items-center justify-center h-screen bg-evening text-white">
         <div class="col-start-2 col-span-4 flex flex-col items-center" >
             <h1 class="text-6xl px-8 w-max text-white"> OUR PARTNERS </h1>
             <div class="w-full grid grid-rows-2 grid-cols-4 mt-28 gap-x-16 text-black grid-flow-col relative items-center justify-center" >
@@ -145,7 +216,7 @@
                 <img src="static/img/robi_logo.png" class="relative col-start-4 bg-transparent p-8 aspect-auto top-0 left-0 absolute"  />
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script>
         document.querySelectorAll('.event').forEach( el => {
@@ -154,7 +225,7 @@
                 anime({
                     targets: [el],
                     scale: 1.01,
-                    backgroundColor: '#fff'
+                    backgroundColor: '#07081f'
                 });
             })
             el.addEventListener('mouseenter', e => {
@@ -184,19 +255,99 @@
             })
         } )
 
+
         setInterval( () => {
             const date1 = new Date();
             const date2 = new Date('10/21/2022');
             const diffTime = Math.abs(date2 - date1);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-            const diffHours = Math.floor(diffTime / (1000 * 60 * 60)) - diffDays*24; 
-            const diffMinutes = Math.floor(diffTime / (1000 * 60)) - diffDays*24 - diffHours*60; 
-            const diffSeconds = Math.floor(diffTime / (1000)) - diffDays*24 - diffHours*60 - diffMinutes*60; 
-            console.log(diffHours + " milliseconds");
-            document.querySelector('.time_remaining').innerHTML = diffDays;
+            const diffDays = diffTime / (1000 * 60 * 60 * 24); 
+            const diffHours = diffTime / (1000 * 60 * 60) - Math.floor(diffDays)*24; 
+            const diffMinutes = diffTime / (1000 * 60 ) - Math.floor(diffDays)*24*60 - Math.floor(diffHours)*60; 
+            // const diffSeconds = diffTime / (1000) - diffDays*24 - diffHours*60 - diffMinutes*60; 
+            // console.log(diffHours + " milliseconds");
+            document.querySelector('.time_remaining').innerHTML = Math.ceil( diffDays ) + " : " + Math.ceil( diffHours ) + " : " + Math.ceil( diffMinutes );
         } )
         
+        const event_details = [
+            {
+                title: 'Robo Riot',
+                description: 'A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!',
+                link: '/event.html?event=robo_riot',
+                img: 'static/event_icons/Robo Riot.png'
+            },
+            {
+                title: 'Business Case Competition',
+                description: 'Test your wits and problem solving capabilities in a case competition designed to solve real life problems!',
+                link: '/event.html?event=business_case_competition',
+                img: 'static/event_icons/BIZCOMP.png'
+            },
+            {
+                title: 'CAD Competition',
+                description: 'Turn your imaginations into reality by designing 3D structures built to handle real life situations.',
+                link: '/event.html?event=cad_competition',
+                img: 'static/event_icons/CAD.png'
+            },
+            {
+                title: 'Gaming Expo',
+                description: 'Frag out against professionals and prodigies alike within Valorant. Prove that your one taps are unparalleled.',
+                link: '/event.html?event=gaming_expo',
+                img: 'static/event_icons/Gaming Expo.png'
+            },
+            {
+                title: 'Robo Soccer',
+                description: 'Think robots could take over the world? Come prove that you’ve designed the next Messi or Ronaldo!',
+                link: '/event.html?event=robo_soccer',
+                img: 'static/event_icons/Robo Soccer.png'
+            },
+            {
+                title: 'Robo Race',
+                description: 'Rev up your motors and let loose on a track designed to push even the best RCs to the limit!',
+                link: '/event.html?event=robo_race',
+                img: 'static/event_icons/Robo Race.png'
+            },
+            {
+                title: 'Poster Presentation',
+                description: 'Have an idea that can change the world? Visualize and present data, plans and what you want to do in front of industry specialists.',
+                link: '/event.html?event=poster_presentation',
+                img: 'static/event_icons/Poster presentation.png'
+            },
+            {
+                title: 'Project Showcasing',
+                description: 'Showcase your idea and your project in a battleground for the best minds in the country!',
+                link: '/event.html?event=project_showcasing',
+                img: 'static/event_icons/Project showcasing.png'
+            },
+            {
+                title: 'General Knowledge Competition',
+                description: 'Are you the type who loves to gather information on all types of topics? Fight it out with the best brainiacs in the country!',
+                link: '/event.html?event=general_knowledge',
+                img: 'static/event_icons/GK.png'
+            },
+            {
+                title: 'Engineering Olympiad',
+                description: 'Know a lot about engineering? Are you up to date with innovations globally? Test your skills out in a battle of the engineers!',
+                link: '/event.html?event=engineering_olympiad',
+                img: 'static/event_icons/Engineering olympiad.png'
+            },
+            {
+                title: 'Robocopter Challenge',
+                description: 'Dominate the skies with your own iteration of a UAS and reach the heights you deserve in our Robocopter Challenge.',
+                link: '/event.html?event=robo_copter',
+                img: 'static/event_icons/Robo Copter.png'
+            },
+        ]
 
+        document.querySelectorAll('.event').forEach( (container, idx) => {
+            container.querySelector('.event_title').innerHTML = event_details[idx].title;
+            container.querySelector('.event_description').innerHTML = event_details[idx].description;
+            container.href = event_details[idx].link;
+            container.querySelector('.event_img').src = event_details[idx].img;
+        } )
+
+        document.querySelectorAll('.navbar_events').forEach( (item, idx) => {
+            item.href = event_details[idx].link;
+            item.innerHTML = event_details[idx].title;
+        } )
 
     </script>
 </body>

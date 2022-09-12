@@ -21,6 +21,9 @@
                         evening: '#07081f',
                         magenta: '#6f1227',
                         orange: '#aa1a24'
+                    },
+                    dropShadow: {
+                        'red-lg': '0 0px 35px rgba(255, 18, 39, 1)',
                     }
                 }
             }
@@ -32,47 +35,45 @@
 <body>
     <div class="bg-evening grid grid-rows-1 auto-rows-auto gap-x-8 grid-cols-6 justify-center text-white" >
 
-        <a href="/" class="text-5xl text-orange py-16 col-start-4 col-span-1 col-span-2 h-60 relative text-right leading-8">
-            <span class="">Mecceleration </span> <br>
-            <span class="text-lg text-white" >by IUT mechanical department</span>
+        <a href="/" class="relative text-5xl text-orange pt-2 col-start-2 col-span-2 col-span-2 h-60 leading-8">
+            <img class=" w-64" src="static/img/Mecceleration.png" />
+            <!-- <span class="text-lg text-white" >by IUT mechanical department</span> -->
         </a>
 
         <!-- <div class="col-start-5" >
             asdasd
         </div> -->
 
-        <div class="col-start-2 col-span-4 relative event-title" >
+        <div class="col-start-2 col-span-4 relative event-title mt-8" >
             <h1 class="py-2 text-6xl" id="event_title">TECHNO CAD</h1>
         </div>
-        <div class="mt-8 col-start-2 col-span-4">
-            ***Only University Students Are Eligible For This Segment*** <br>
-
-            Participants in Team: 3 <br>
-            Registration Fee (Team) : 1225 BDT <br>
-            Cross Institution Teams are eligible <br> <br>
+        <div class="mt-8 col-start-2 col-span-2">
+            
+            <p id="event_description" class="whitespace-pre-wrap" ></p>
 
             <div class="relative w-content" >
                 <div class="absolute w-full bg-orange" >  </div>
                 <a class="relative text-2xl text-orange"> Download Rulebook </a>
             </div>
 
-            <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-4" >Register</button>
+            <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-4" > <a href="" id="form_link">Register</a></button>
 
         </div>
+
+        <img src="static/event_icons/Robo Copter.png" class="col-start-5 drop-shadow-red-lg" />
 
         <div class="relative col-start-2 col-span-4 relative mt-24 w-min" >
             <h1 class="relative pl-4 py-6 text-4xl registration-title w-96">Registration Process</h1>
         </div>
         <div class="relative col-start-2 col-span-4 flex flex-col items-center mt-8 mb-96" >
-            
+
             <div class='relative pl-8 w-full mt-8'>
                 <div class='flex mb-12'>
                     <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
                     <div class='ml-8'>
                         <p class='text-3xl'>
-                        Submit up the Registration form
+                            Download the rulebook and go through it
                         </p>
-                        <a class="relative text-lg text-orange"> Form Link </a>
                     </div>
                 </div>
             
@@ -80,21 +81,44 @@
                     <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
                     <div class='ml-8'>
                         <p class='text-3xl'>
-                            Complete Payment
+                            Click the 'Get Registered' button
                         </p>
-                        <p class="relative text-lg mt-4"> 
-                            payment details: lorem ipsum doler motor
+                    </div>
+                </div>
+
+                <div class='flex mb-12'>
+                    <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
+                    <div class='ml-8'>
+                        <p class='text-3xl'>
+                            Fill up the form
+                        </p>
+                    </div>
+                </div>
+
+                <div class='flex mb-12'>
+                    <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
+                    <div class='ml-8'>
+                        <p class='text-3xl'>
+                            Complete payment
+                        </p>
+                    </div>
+                </div>
+
+                <div class='flex mb-12'>
+                    <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
+                    <div class='ml-8'>
+                        <p class='text-3xl'>
+                            Enter transaction in the required field within the form
                         </p>
                     </div>
                 </div>
             
-                <div class='flex'>
+                <div class='flex mb-12'>
                     <div class='w-8 h-8 text-center rounded-full border-2 border-orange'>1</div>
                     <div class='ml-8'>
                         <p class='text-3xl'>
-                        Submit up the Registration form
+                            Click Submit
                         </p>
-                        <a class="relative text-lg text-orange"> Form Link </a>
                     </div>
                 </div>
             
@@ -120,7 +144,122 @@
             return result;
         }
 
-        document.getElementById("event_title").innerHTML = findGetParameter("event").toUpperCase();
+
+        const event_details = [
+            {
+                title: 'Robo Riot',
+                description: `Teams will be instructed to construct a remote-controlled robot that will pass through  hurdles and survival tests while battling with other robots (of a similar kind), to survive and be the last robot functioning in the arena.
+Team formation policy: 4 members per team
+Reg Fee: 
+Prize Money: `,
+                link: '/event.html?event=robo_riot',
+                img: 'static/event_icons/Robo Riot.png',
+                form_link: 'https://forms.gle/tpM8zL4JUzoXCRGi6'
+            },
+            {
+                title: 'Business Case Competition',
+                description: `Test your wits and problem solving capabilities in a case competition designed to solve real life problems! The Case Study competition will test the student’s ability to analyze, break-down and solve real life business problems and present them before a panel of judges.
+Team Formation Policy: 4 members per team
+Reg Fee:`,
+                link: '/event.html?event=business_case_competition',
+                img: 'static/event_icons/BIZCOMP.png',
+                form_link: 'https://forms.gle/tpM8zL4JUzoXCRGi6'
+            },
+            {
+                title: 'CAD Competition',
+                description: `The need to be able to use Solidworks is a growing demand in Mechanical Engineers in the modern world, as engineers are expected to generate a visual render for anything before industrially producing the product. Turn your imaginations into reality by designing 3D structures built to handle real life situations. 
+Team formation policy: 2 members per team
+Reg Fee:`,
+                link: '/event.html?event=cad_competition',
+                img: 'static/event_icons/CAD.png',
+                form_link: 'https://forms.gle/9zd6n1Guc8XKeQ6d9'
+            },
+            {
+                title: 'Gaming Expo',
+                description: `Frag out against professionals and prodigies alike within Valorant. Prove that your one taps are unparalleled. Teams will participate in the preliminary online round will consist of the entire map pool.  The final rounds will be held on campus with a gaming setup from our sponsors and will teams will go head to head in a live streamed battle for Project A glory!
+Team Formation Policy: 5 members per team (no subs)
+Reg Fee:
+`,
+                link: '/event.html?event=gaming_expo',
+                img: 'static/event_icons/Gaming Expo.png',
+                form_link: 'https://forms.gle/ZNTJxTTnitM7BEbY7'
+            },
+            {
+                title: 'Robo Soccer',
+                description: `Teams will construct a remote-controlled robot that will control a ball to score goals and defend its own goalpost. The team scoring the most goals within the time limit will emerge victorious.
+Team Formation Policy: 4 members per team
+Reg Fee:`,
+                link: '/event.html?event=robo_soccer',
+                img: 'static/event_icons/Robo Soccer.png',
+                form_link: 'https://forms.gle/15wRDPyoho99h1rZA'
+            },
+            {
+                title: 'Robo Race',
+                description: `Teams will be instructed to build a remote-controlled robot that will have to race through challenging terrain and reach the end point in the shortest possible time. The competition will take place over several rounds and push all participating RCs to the limit, so make sure to build your bot to be robust!
+Team Formation Policy: 4 members per team
+Reg Fee:`,
+                link: '/event.html?event=robo_race',
+                img: 'static/event_icons/Robo Race.png',
+                form_link: 'https://forms.gle/J1PUDguZpDbi6f7Y9'
+            },
+            {
+                title: 'Poster Presentation',
+                description: `Practice your data visualization and presentation skills in this segment where you can present your poster regarding any field of science and technology. Teams will be instructed to come up with innovative ideas in the form of posters and present them accordingly on the competition date. The teams will be judged mainly on the basis of merit, presentation skills and aesthetics.
+Team Formation Policy: 2 members per team
+Reg Fee:`,
+                link: '/event.html?event=poster_presentation',
+                img: 'static/event_icons/Poster presentation.png',
+                form_link: 'https://forms.gle/tpM8zL4JUzoXCRGi6'
+            },
+            {
+                title: 'Project Showcasing',
+                description: `Showcase your idea and your project in a battleground for the best minds in the country! Teams will be showcasing projects related to any field of engineering. The teams will be judged mainly on the basis of innovation, real-life application, feasibility and legitimacy of the project. There will be separate judgment panels for College and University levels.
+Team Formation Policy: 3 members per team
+Reg Fee:`,
+                link: '/event.html?event=project_showcasing',
+                img: 'static/event_icons/Project showcasing.png',
+                form_link: 'https://forms.gle/tpM8zL4JUzoXCRGi6'
+            },
+            {
+                title: 'General Knowledge Competition',
+                description: `Are you the type who loves to gather information on all types of topics? Fight it out with the best brainiacs in the country! Questions will be formed by an independent panel who have a diversified knowledge base. School, College and University level students are all invited to participate.
+Team Formation Policy: Individual Participation.`,
+                link: '/event.html?event=general_knowledge',
+                img: 'static/event_icons/GK.png',
+                form_link: 'https://forms.gle/tpM8zL4JUzoXCRGi6'
+            },
+            {
+                title: 'Engineering Olympiad',
+                description: `Know a lot about engineering? Are you up to date with innovations globally? Test your skills out in a battle of the engineers! Individual participants will be asked to solve several problems from different sectors related to mechanical engineering. Only students from University level will be eligible to participate in this competition.
+Team Formation Policy: Individual Participation.
+Reg Fee:`,
+                link: '/event.html?event=engineering_olympiad',
+                img: 'static/event_icons/Engineering olympiad.png',
+                form_link: 'https://forms.gle/QGnGJc4K4JkJ3XPA7'
+            },
+            {
+                title: 'Robocopter Challenge',
+                description: `Dominate the skies with your own iteration of a UAS and reach the heights you deserve in our Robocopter Challenge. The Robocopter Challenge is a new addition to Mecceleration 2022. The competition will be held within an obstacle course which quadcopters must navigate within a set time.  Extra points will be rewarded for early completion of the course.
+Team Formation Policy: 3-5 members per team
+Reg Fee:`,
+                link: '/event.html?event=robo_copter',
+                img: 'static/event_icons/Robo Copter.png',
+                form_link: 'https://forms.gle/WSkGJDj2mb1U8Jc26'
+            },
+        ]
+
+
+        const event_name = findGetParameter("event");
+
+        event_details.map( ( event, i ) => {
+            if( event.link.indexOf(event_name) != -1 ) {
+                document.querySelector('#event_title').innerHTML = event_details[0].title;
+                document.querySelector('#event_description').innerHTML = event_details[0].description;
+                document.querySelector('#form_link').href = event_details[0].form_link;
+            }
+        } )
+
+        
 
     </script>
 </body>

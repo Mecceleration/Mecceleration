@@ -1,5 +1,50 @@
 @font-face { font-family: Carbon Regular; src: url('static/fonts/Carbon\ Regular/Carbon\ Regular.ttf'); } 
+@font-face {
+    font-family: 'Reem Kufi Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:  url('static/fonts/Reem\ Kufi/ReemKufi-Regular.woff') format('woff');
+}
 
 body {
     font-family: Carbon Regular;
 }
+
+.title { 
+    /* font-family: Reem Kufi Regular */
+}
+
+.event_title {
+    width: 50%;
+}
+
+.event_img{
+    margin: 10px;
+}
+
+.event_bar {
+    position: absolute;
+    width: 5px;
+    background: white;
+    height: 120%;
+    top: -30%;
+    transform: rotate(15deg)    
+}
+
+.bar_1, .bar_4 {
+    display: none;
+}
+
+.bar_2 {
+    left: 39%;
+}
+
+
+.bar_3 {
+    left: 62%;
+}
+
+.bar_4 {
+    left: 62%;
+}
+
