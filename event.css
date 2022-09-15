@@ -1,4 +1,5 @@
 @font-face { font-family: Carbon Regular; src: url('static/fonts/Carbon\ Regular/Carbon\ Regular.ttf'); } 
+@font-face { font-family: Sheeping Cats; src: url('static/fonts/SheepingCats.ttf'); } 
 
 body {
     font-family: Carbon Regular;

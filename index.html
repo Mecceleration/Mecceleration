@@ -14,6 +14,8 @@
                 fontFamily: {
                     sans: ['Carbon Regular', 'sans-serif'],
                     serif: ['Merriweather', 'serif'],
+                    cats: ['Sheeping Cats'],
+                    vermin: ['Vermin']
                 },
                 extend: {
                     colors: {
@@ -34,8 +36,31 @@
 
 <body>
 
-    <div class="bg-evening h-screen grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center text-white" >
-        <div class="col-start-6 ml-8">
+    <div class="bg-evening h-screen flex lg:grid lg:grid-rows-1 lg:gap-x-8 lg:grid-cols-6 items-center justify-center text-white" >
+        <div class="container col-start-1 row-start-1 absolute top-0 left-0 self-start">
+            <input type="checkbox" name="" id="" class="check">
+            <ul class="menu-items">
+                <li><h2 class="text-2xl pb-2">Events</h2></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+                <li><a href="event.html?event=accelerate" class="navbar_events_mobile">Accelerate</a></li>
+            </ul>
+            <div class="ham-menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </div>
+
+        <div class="hidden lg:block col-start-6 ml-8">
             <ul class="flex flex-col gap-y-8 navbar_events_container">
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
@@ -50,139 +75,144 @@
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
             </ul>
         </div>
-        <div class="row-start-1 col-start-2 col-span-4 text-6xl flex  flex-col gap-y-4">
+        <div class="m-4 lg:m-0 lg:row-start-1 lg:col-start-2 lg:col-span-4 text-6xl flex  flex-col gap-y-2 lg:gap-y-4 w-screen lg:w-auto">
             <!-- <p class="text-2xl"> Walton Laptop Presents</p> -->
-            <p class="text-8xl text-orange title"> Mecceleration</p>
-            <p class="text-4xl">Innovation and crap</p>
-            <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-4" >Contact us</button>
+            <p class="text-4xl lg:text-6xl text-orange title font-vermin"> Mecceleration</p>
+            <p class="text-2xl lg:text-4xl">Innovation and crap</p>
+            <button class="text-lg lg:text-2xl px-4 lg:px-8 py-1 lg:py-2 bg-orange text-black w-max mt-4" >Contact us</button>
         </div>
     </div>
 
 
-    <div class="relative px-80 mr-72 w-full text-white bg-evening flex h-64 items-center justify-center gap-x-8" >
-        <div class="event_bar bar_1"></div>
-        <div class="col-span-1 h-36 w-96 flex flex-col flex items-center" >
-            <p class="text-5xl">Event Count</p>
-            <p class="text-3xl">11</p>
+    <div class="relative lg:px-96 lg:mr-72 w-full text-white bg-evening flex flex-col h-64 items-center justify-center" >
+        <!-- <div class="event_bar bar_1"></div> -->
+        <div class="col-span-1 h-36 px-32 w-full flex flex-row flex items-center justify-between" >
+            <div class="flex flex-col items-center">
+            <p class=" text-3xl lg:text-3xl font-cats text-orange">Event Count</p>
+            <p class="text-xl lg:text-4xl mt-2 font-cats">11</p>
+            </div>
+            <div class="flex flex-col items-center">
+            <p class=" text-3xl lg:text-3xl font-cats text-orange">Prize Money</p>
+            <p class="text-xl lg:text-4xl mt-2 font-cats">450k+</p>
         </div>
-        <div class="event_bar bar_2"></div>
-        <div class="col-span-1 h-36 w-96 flex flex-col flex items-center" >
-            <p class="text-5xl">Prize Money</p>
-            <p class="text-3xl">450k+</p>
         </div>
-        <div class="event_bar bar_3"></div>
-        <div class="col-span-1 h-36 w-96 flex flex-col flex items-center" >
-            <p class="text-5xl">Time Left</p>
-            <p class="text-3xl time_remaining">420</p>
+        <!-- <div class="event_bar bar_2"></div> -->
+        <div class="col-span-1 px-64 h-36 w-full flex flex-row flex items-center justify-between" >
+            
         </div>
-        <div class="event_bar bar_4"></div>
+        <!-- <div class="event_bar bar_3"></div> -->
+        <div class="col-span-1 px-64 h-36 w-full flex flex-col gap-y-4 flex items-center justify-between" >
+            <p class=" text-3xl lg:text-3xl font-cats text-orange">Time Left</p>
+            <p class="text-xl lg:text-7xl font-cats time_remaining">420</p>
+        </div>
+        <!-- <div class="event_bar bar_4"></div> -->
     </div>
 
 
 
-    <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center bg-evening h-screen text-white" >
-        <div class="col-start-2 col-span-2" >
-            <p class="text-7xl text-orange">MECCELERATION</p>
-            <p class="text-xl mt-8">
-                The biggest mechanical engineering Tech-Biz competition in Bangladesh is back with a bang after 2 years! Whether you are an aspiring engineer looking to stack your machines/ robots up against the very best, an aspiring entrepreneur, the local brainiac or the best gamer your friends know- Mecceleration 2022  has a proving ground ready for you! Fight for glory in one of our 11 signature events and aspire to be the best of a thousand participants.
-Red Heaven awaits you. Registrations are open now!
-
-
-            </p>
-        </div>
-        <div class="col-start-4 col-span-2 ml-24">
+    <div class="py-16 relative lg:grid lg:grid-rows-1 gap-x-8 lg:grid-cols-6 items-center justify-center bg-evening lg:h-screen text-white" >
+        
+        <div class="mx-8 lg:col-start-4 row-start-1 lg:col-span-2 lg:ml-24">
             <img src="static/img/Mecceleration.png" />
         </div>
+        
+        <div class="p-4 lg:col-start-2 lg:col-span-2" >
+            <p class="text-3xl lg:text-7xl text-orange">MECCELERATION</p>
+            <p class="text-md lg:text-xl mt-8">
+                The biggest mechanical engineering Tech-Biz competition in Bangladesh is back with a bang after 2 years! Whether you are an aspiring engineer looking to stack your machines/ robots up against the very best, an aspiring entrepreneur, the local brainiac or the best gamer your friends know- Mecceleration 2022  has a proving ground ready for you! Fight for glory in one of our 11 signature events and aspire to be the best of a thousand participants.
+Red Heaven awaits you. Registrations are open now!
+            </p>
+        </div>
     </div>
 
-    <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center bg-evening text-white">
+    <div class="flex lg:grid lg:grid-rows-1 lg:gap-x-8 lg:grid-cols-6 items-center justify-center bg-evening text-white">
         <div class="col-start-2 col-span-4 flex flex-col items-center" >
-            <h1 class="text-6xl px-8 w-max text-white"> OUR EVENTS </h1>
-            <div class="w-full grid grid-cols-3 mt-28 gap-x-2 gap-y-2 text-white drop-shadow-lg relative" >
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+            <h1 class="text-3xl lg:text-6xl px-8 w-max text-white"> OUR EVENTS </h1>
+            <div class="px-8 grid grid-cols-1 mt-28 gap-x-2 gap-y-2 text-white drop-shadow-lg relative lg:w-full lg:grid-cols-3" >
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
                 </a>
-                <a href="event.html" class="event relative col-span-1 h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-4xl flex items-center justify-between">
-                        <span class="event_title">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right event_img" />
+                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
+                        <span class="event_title lg:col-start-1">Robo Riot</span>
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
@@ -191,18 +221,20 @@ Red Heaven awaits you. Registrations are open now!
         </div>
     </div>
 
-    <div class="grid grid-rows-1 gap-x-8 grid-cols-6 items-center justify-center bg-evening h-screen text-white" >
-        <div class="col-start-2 col-span-2" >
-            <p class="text-4xl text-orange">DEPARTMENT OF MECHANICAL AND PRODUCTION ENGINEERING</p>
-            <p class="text-xl mt-8">
+    <div class="py-16 relative gap-x-8 items-center justify-center bg-evening text-white lg:grid lg:grid-rows-1 lg:gap-x-8 lg:grid-cols-6 lg:h-screen" >
+        
+        <div class="lg:row-start-1 lg:col-start-4 lg:col-span-2 lg:ml-24 mx-4 my-4">
+            <img src="static/img/mech_dept.jpg" />
+        </div>
+
+        <div class="lg:col-start-2 lg:col-span-2 p-4" >
+            <p class="text-3xl lg:text-4xl text-orange">DEPARTMENT OF MECHANICAL AND PRODUCTION ENGINEERING</p>
+            <p class="text-md lg:text-xl mt-8">
                 For the 7th time in almost as many years,  the Department of Mechanical and Production Engineering (MPE), IUT is set to host Mecceleration, the biggest Mechanical Engineering technology; innovation; and business festival in Bangladesh.
 The Department of Mechanical and Production Engineering (MPE) is an academic department of the Islamic University of Technology (IUT) established to help develop human resources in the member states of the Organization of Islamic Cooperation(OIC). The Department is also involved in technological and engineering research as well as in organizing seminars, short courses.
 </p>
-            <button class="text-2xl px-8 py-2 bg-orange text-black w-max mt-8" >Event Details</button>
+            <button class="text-xl lg:text-2xl px-6 py-1 lg:px-8 lg:py-2 bg-orange text-black w-max mt-8" >Event Details</button>
 
-        </div>
-        <div class="col-start-4 col-span-2 ml-24">
-            <img src="static/img/mech_dept.jpg" />
         </div>
     </div>
 
@@ -348,6 +380,12 @@ The Department of Mechanical and Production Engineering (MPE) is an academic dep
             item.href = event_details[idx].link;
             item.innerHTML = event_details[idx].title;
         } )
+
+        document.querySelectorAll('.navbar_events_mobile').forEach( (item, idx) => {
+            item.href = event_details[idx].link;
+            item.innerHTML = event_details[idx].title;
+        } )
+        
 
     </script>
 </body>

@@ -1,4 +1,6 @@
 @font-face { font-family: Carbon Regular; src: url('static/fonts/Carbon\ Regular/Carbon\ Regular.ttf'); } 
+@font-face { font-family: Vermin; src: url('static/fonts/kenyanCoffee.ttf'); } 
+@font-face { font-family: Sheeping Cats; src: url('static/fonts/SheepingCats.ttf'); } 
 @font-face {
     font-family: 'Reem Kufi Regular';
     font-style: normal;
@@ -46,5 +48,105 @@ body {
 
 .bar_4 {
     left: 62%;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+.menu-items {
+    text-align: center;
+    position: absolute;
+    padding: 3rem;
+    top: 0rem;
+    left: 0rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 1rem;
+    border: 4px solid black;
+    background-color: black;
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+}
+
+.menu-items li{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-items li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-items li a:hover{
+    color: rgb(174, 174, 174);
+}
+
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.check:checked~.menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.ham-menu {
+    height: 2rem;
+    width: 2rem;
+    top: 0;
+    left: 0;
+    margin: .8rem;
+    position: absolute;
+    padding: 0.2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.25em;
+}
+
+.ham-menu .line {
+    background-color: white;
+    border-radius: 1em;
+    width: 1.6rem;
+    height: 0.15rem;
+}
+
+.ham-menu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+}
+
+.check:checked~.ham-menu .line1 {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.check:checked~.ham-menu .line2 {
+    opacity: 0;
+}
+
+.check:checked~.ham-menu .line3 {
+    display: block;
+    transform: rotate(-45deg);
 }
 
