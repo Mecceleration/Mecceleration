@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div class="px-6 lg:px-0 bg-evening flex flex-col lg:grid lg:grid-rows-1 auto-rows-auto lg:gap-x-8 lg:grid-cols-6 justify-center text-white">
+    <div class="px-6 lg:px-0 bg-evening flex flex-col lg:grid lg:grid-rows-1 lg:auto-rows-auto lg:gap-x-8 lg:grid-cols-6 justify-center text-white">
 
         <a href="/" class="relative text-5xl text-orange pt-2 lg:col-start-2 lg:col-span-2 lg:col-span-2  lg:h-60 leading-8">
             <img class="w-16 lg:w-64" src="static/img/Mecceleration.png" />
@@ -45,12 +45,24 @@
             asdasd
         </div> -->
 
-        <img src="static/event_icons/Robo Copter.png" id="event_img" class="my-12 lg:my-0 pt-8 lg:pt-0 px-16 lg:col-start-5 drop-shadow-red-lg" />
+        <img src="static/event_icons/Robo Copter.png" id="event_img" class="my-12 lg:my-0 pt-8 lg:pt-0 px-16 lg:pl-48 self-center lg:row-start-2 lg:col-start-4 lg:col-span-3 drop-shadow-red-lg" />
 
-        <div class="col-start-2 col-span-4 relative event-title mt-8">
-            <h1 class="py-2 text-4xl lg:text-6xl" id="event_title">TECHNO CAD</h1>
+        <div class="row-start-2 col-start-2 col-span-2 relative mt-8">
+            <h1 class="py-2 text-4xl lg:text-6xl event-title relative mb-8" id="event_title">TECHNO CAD</h1>
+            
+            <p id="event_description" class="whitespace-pre-wrap"></p>
+
+            <div class="relative w-content mt-4">
+                <a class="relative text-xl lg:text-2xl text-orange"> Download Rulebook </a>
+            </div>
+
+            <button class="text-xl lg:text-2xl px-6 lg:px-8 py-1 lg:py-2 bg-orange text-black w-max mt-4"> <a href=""
+                    id="form_link">Register</a></button>
+
+        
         </div>
-        <div class="mt-8 col-start-2 col-span-2">
+
+        <!-- <div class="row-start-2 mt-8 col-start-2 col-span-2">
 
             <p id="event_description" class="whitespace-pre-wrap"></p>
 
@@ -63,7 +75,7 @@
                     id="form_link">Register</a></button>
 
         </div>
-
+ -->
 
         <div class="relative lg:col-start-2 lg:col-span-4 relative mt-24 w-min">
             <h1 class="relative lg:pl-4 py-6 text-3xl lg:text-4xl registration-title lg:w-96">Registration Process</h1>

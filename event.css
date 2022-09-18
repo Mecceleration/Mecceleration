@@ -6,6 +6,9 @@ body {
 }
 
 .event-title::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
     content: '';
     width: 6em;
     height: 6px;

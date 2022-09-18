@@ -36,7 +36,7 @@
 
 <body>
 
-    <div class="bg-evening h-screen flex lg:grid lg:grid-rows-1 lg:gap-x-8 lg:grid-cols-6 items-center justify-center text-white" >
+    <div class="bg-evening h-screen flex lg:grid lg:grid-rows-1 lg:gap-x-8 lg:grid-cols-6 lg:auto-cols-fr items-center justify-center text-white" >
         <div class="container col-start-1 row-start-1 absolute top-0 left-0 self-start">
             <input type="checkbox" name="" id="" class="check">
             <ul class="menu-items">
@@ -60,8 +60,8 @@
             </div>
         </div>
 
-        <div class="hidden lg:block col-start-6 ml-8">
-            <ul class="flex flex-col gap-y-8 navbar_events_container">
+        <div class="hidden lg:block col-start-6 col-span-1 ml-8">
+            <ul class="flex flex-col w-full gap-y-8 navbar_events_container">
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
@@ -75,7 +75,7 @@
                 <li><a href="event.html?event=accelerate" class="navbar_events">Accelerate</a></li>
             </ul>
         </div>
-        <div class="m-4 lg:m-0 lg:row-start-1 lg:col-start-2 lg:col-span-4 text-6xl flex  flex-col gap-y-2 lg:gap-y-4 w-screen lg:w-auto">
+        <div class="m-4 lg:m-0 lg:row-start-1 lg:col-start-2 lg:col-span-3 text-6xl flex  flex-col gap-y-2 lg:gap-y-4 w-screen lg:w-auto">
             <!-- <p class="text-2xl"> Walton Laptop Presents</p> -->
             <p class="text-4xl lg:text-6xl text-orange title font-vermin"> Mecceleration</p>
             <p class="text-2xl lg:text-4xl">Innovation and crap</p>
@@ -84,26 +84,23 @@
     </div>
 
 
-    <div class="relative lg:px-96 lg:mr-72 w-full text-white bg-evening flex flex-col h-64 items-center justify-center" >
+    <div class="relative lg:px-96 lg:mr-72 w-full text-white bg-evening flex flex-col items-center justify-center" >
         <!-- <div class="event_bar bar_1"></div> -->
-        <div class="col-span-1 h-36 px-32 w-full flex flex-row flex items-center justify-between" >
+        <div class="col-span-1 lg:h-36 w-full flex flex-col gap-y-8 mb-8 lg:flex-row flex items-center justify-between" >
             <div class="flex flex-col items-center">
-            <p class=" text-3xl lg:text-3xl font-cats text-orange">Event Count</p>
-            <p class="text-xl lg:text-4xl mt-2 font-cats">11</p>
+                <p class=" text-3xl lg:text-3xl font-cats text-orange">Event Count</p>
+                <p class="text-xl lg:text-4xl mt-2 font-cats">11</p>
             </div>
             <div class="flex flex-col items-center">
-            <p class=" text-3xl lg:text-3xl font-cats text-orange">Prize Money</p>
-            <p class="text-xl lg:text-4xl mt-2 font-cats">450k+</p>
-        </div>
+                <p class=" text-3xl lg:text-3xl font-cats text-orange">Prize Money</p>
+                <p class="text-xl lg:text-4xl mt-2 font-cats">450k+</p>
+            </div>
         </div>
         <!-- <div class="event_bar bar_2"></div> -->
-        <div class="col-span-1 px-64 h-36 w-full flex flex-row flex items-center justify-between" >
-            
-        </div>
         <!-- <div class="event_bar bar_3"></div> -->
-        <div class="col-span-1 px-64 h-36 w-full flex flex-col gap-y-4 flex items-center justify-between" >
+        <div class="w-full w-full flex flex-col gap-y-4 flex items-center justify-between" >
             <p class=" text-3xl lg:text-3xl font-cats text-orange">Time Left</p>
-            <p class="text-xl lg:text-7xl font-cats time_remaining">420</p>
+            <p class="text-2xl lg:text-7xl font-cats time_remaining">420</p>
         </div>
         <!-- <div class="event_bar bar_4"></div> -->
     </div>
@@ -128,91 +125,11 @@ Red Heaven awaits you. Registrations are open now!
     <div class="flex lg:grid lg:grid-rows-1 lg:gap-x-8 lg:grid-cols-6 items-center justify-center bg-evening text-white">
         <div class="col-start-2 col-span-4 flex flex-col items-center" >
             <h1 class="text-3xl lg:text-6xl px-8 w-max text-white"> OUR EVENTS </h1>
-            <div class="px-8 grid grid-cols-1 mt-28 gap-x-2 gap-y-2 text-white drop-shadow-lg relative lg:w-full lg:grid-cols-3" >
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
-                    </p>
-                    <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
-                    <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
-                </a>
-                <a href="event.html" class="event relative col-span-1 lg:h-80 drop-shadow-red-lg bg-evening p-8">
-                    <p class="text-3xl lg:text-4xl flex flex-col lg:grid lg:grid-cols-2 items-center justify-between">
-                        <span class="event_title lg:col-start-1">Robo Riot</span>
-                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 float-right lg:col-start-2 event_img" />
+            <div class="events_container px-8 grid grid-cols-1 mt-28 gap-x-2 gap-y-2 text-white drop-shadow-lg relative lg:w-full lg:grid-cols-3" >
+                <a href="event.html" class="event relative col-span-1 drop-shadow-red-lg bg-evening p-8">
+                    <p class="text-3xl lg:text-4xl flex flex-col 2xl:flex-row-reverse items-center justify-between ">
+                        <img src="static/event_icons/BIZCOMP" class="w-16 h-16 event_img" />
+                        <span class="event_title text-center w-full lg:text-left">Robo Riot</span>
                     </p>
                     <p class="text-lg mt-2 event_description">A spectacular display of bloodthirsty (or metal-thirsty?) bots pitted against each other in a custom made ring designed for carnage!</p>
                     <button class="mt-4 px-4 py-2 bg-evening event_link text-white shadow shadow-magenta">Register Now</button>
@@ -368,6 +285,11 @@ The Department of Mechanical and Production Engineering (MPE) is an academic dep
                 img: 'static/event_icons/Robo Copter.png'
             },
         ]
+
+        const event_html = document.querySelector('.events_container').innerHTML;
+
+        document.querySelector('.events_container').innerHTML = ""
+        event_details.forEach( e => document.querySelector('.events_container').innerHTML += event_html )
 
         document.querySelectorAll('.event').forEach( (container, idx) => {
             container.querySelector('.event_title').innerHTML = event_details[idx].title;
